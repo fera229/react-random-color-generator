@@ -1,7 +1,7 @@
 import './App.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function App() {
+export default function App() {
   // State to hold the current color
   const [color, setColor] = useState('#FFFFFF');
 
@@ -29,5 +29,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
