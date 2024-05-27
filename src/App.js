@@ -14,6 +14,7 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Random Color Generator</h1>
         <div
           style={{
             backgroundColor: color,
