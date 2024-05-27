@@ -7,7 +7,10 @@ export default function App() {
 
   // Function to generate a random color
   const generateRandomColor = () => {
-    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    if (randomColor.length !== 7) {
+      randomColor = randomColor.padEnd(7, '0');
+    }
     setColor(randomColor);
   };
 
